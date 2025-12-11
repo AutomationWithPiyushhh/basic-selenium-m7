@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selenium Locator Practice Page</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background-color: #f4f4f4; }
+        .section { background: white; padding: 15px; margin-bottom: 20px; border-left: 5px solid #007bff; }
+        h3 { margin-top: 0; color: #333; }
+        .btn { padding: 5px 10px; cursor: pointer; }
+        .spacer { margin: 10px 0; }
+    </style>
+</head>
+<body>
+
+    <h1>Automation Testing Master Class</h1>
+    <p>Practice different locators below.</p>
+
+    <div class="section">
+        <h3>1. By ID</h3>
+        <p>Goal: Locate user field.</p>
+        <input type="text" id="unique_user_id_99" placeholder="Username (Use ID)" />
+    </div>
+
+    <div class="section">
+        <h3>2. By Name</h3>
+        <p>Goal: Locate email field.</p>
+        <input type="text" name="user_email_field" placeholder="Email (Use Name)" />
+    </div>
+
+    <div class="section">
+        <h3>3. By Class Name</h3>
+        <p>Goal: Locate Login button.</p>
+        <button class="btn btn-login-action">Login</button>
+        <button class="btn btn-cancel">Cancel</button>
+    </div>
+
+    <div class="section">
+        <h3>4. By Tag Name</h3>
+        <p>Goal: Count these links.</p>
+        <div id="links-area">
+            <a href="#">Link 1</a> | <a href="#">Link 2</a> | <a href="#">Link 3</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>5 & 6. Link Text</h3>
+        <p>Goal: Click specific links.</p>
+        <a href="#">Terms and Conditions</a><br><br>
+        <a href="#">View Order #5521 Details</a>
+    </div>
+
+    <div class="section">
+        <h3>7. CSS Selector</h3>
+        <p>Goal: Locate Submit button inside footer.</p>
+        <div class="footer-area">
+            <button id="submit" style="background:green; color:white;">Submit</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>8. XPath (Custom Attribute)</h3>
+        <p>Goal: Locate 'Add to Cart'.</p>
+        <button data-testid="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="section">
+        <h3>9. XPath (Text Function)</h3>
+        <p>Goal: Locate the 'Save' text.</p>
+        <div>
+            <span>Cancel</span>
+            <span style="font-weight:bold;">Save</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>10. XPath (Multiple Attributes)</h3>
+        <p>Goal: Locate the 'Go' button.</p>
+        <input type="submit" class="form-btn" value="Go" />
+        <input type="reset" class="form-btn" value="Clear" />
+    </div>
+
+    <div class="section">
+        <h3>11. XPath (Contains)</h3>
+        <p>Goal: Locate User Data.</p>
+        <div id="user_profile_98734_view" style="border:1px dashed grey; padding:5px;">User Data: John Doe</div>
+    </div>
+
+    <div class="section">
+        <h3>12 & 13. XPath Axes</h3>
+        <p>Goal 1: Click Checkbox next to 'I agree'.</p>
+        <div class="form-group">
+            <label>I agree to terms</label>
+            <input type="checkbox" />
+        </div>
+
+        <p class="spacer">Goal 2: Find the Row containing 'Product A'.</p>
+        <table border="1">
+            <tr>
+                <td>Product A</td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr>
+                <td>Product B</td>
+                <td><button>Delete</button></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

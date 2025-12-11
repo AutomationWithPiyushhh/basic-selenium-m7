@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Selenium Challenge</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; padding: 20px; background-color: #eef2f5; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h2 { border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+        .challenge-box { margin-bottom: 40px; padding: 15px; border: 1px solid #ddd; border-left: 5px solid #ff5722; }
+        .dynamic-label { color: #555; font-size: 0.9em; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🚀 Master Level Locator Challenge</h1>
+    <p>Use the knowledge from your slides to solve these scenarios.</p>
+
+    <div class="challenge-box">
+        <h3>1. Dynamic ID Challenge</h3>
+        <p>The number in this ID changes every time the page loads. You cannot use the full ID.</p>
+        
+        <input type="text" id="session_12345_user" placeholder="Enter User Session ID" />
+    </div>
+
+    <div class="challenge-box">
+        <h3>2. Dependent/Independent XPath</h3>
+        <p>Your Goal: Check the box for "Selenium", but the checkbox has NO unique ID. You must find the text "Selenium" first (Independent) and traverse to the checkbox (Dependent).</p>
+        
+        <table>
+            <tr>
+                <th>Course Name</th>
+                <th>Select</th>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td><input type="checkbox" name="c1" /></td>
+            </tr>
+            <tr>
+                <td>Selenium</td>
+                <td><input type="checkbox" name="c2" /></td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td><input type="checkbox" name="c3" /></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="challenge-box">
+        <h3>3. Multiple Attributes Logic</h3>
+        <p>There are two "Login" buttons. Find the one that is strictly for <b>Admins</b>.</p>
+        
+        <button type="button" class="btn" role="guest">Guest Login</button>
+        <button type="button" class="btn" role="admin">Admin Login</button>
+    </div>
+
+    <div class="challenge-box">
+        <h3>4. Long & Dynamic Link Text</h3>
+        <p>The link text is very long and has dynamic spaces. Use <code>partialLinkText</code>.</p>
+        
+        <a href="/report/2025">
+           Click here to download the full annual report for the fiscal year 2025 - PDF Version
+        </a>
+    </div>
+
+    <div class="challenge-box">
+        <h3>5. Backward Traversal (Axes)</h3>
+        <p>Locate the label "Username" using the Input field as your starting point. (Reverse direction).</p>
+        
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" id="fixed_input_id" />
+        </div>
+    </div>
+    
+    <div class="challenge-box">
+        <h3>6. CSS Hierarchy</h3>
+        <p>Locate the "Subscribe" button using CSS Selector (Parent Child relationship).</p>
+        
+        <div class="newsletter-signup">
+             <button class="sub-btn">Subscribe</button>
+        </div>
+        <div class="other-area">
+            <button class="sub-btn">Don't Click Me</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

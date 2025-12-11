@@ -13,18 +13,17 @@ public class DirectLocator {
 		driver.manage().window().maximize();
 
 		driver.get("https://www.instagram.com/");
-		
-		Thread.sleep(3000);
-		driver.findElement(By.className("xwhw2v2")).click();
-		
-		
+
+//		Thread.sleep(3000);
+//		driver.findElement(By.className("xwhw2v2")).click();
+
 //		link text
 //		driver.findElement(By.linkText("Forgot password?"));
 //		partial link text
 //		driver.findElement(By.partialLinkText("Forgot"));
 
-		List<WebElement> links = driver.findElements(By.tagName("a"));
-		System.out.println(links.size());
+//		List<WebElement> links = driver.findElements(By.tagName("a"));
+//		System.out.println(links.size());
 //		class="_aa4b _add6 _ac4d _ap35"
 //		class="_aa4b _add6 _ac4d _ap35"
 //		Thread.sleep(2000);
@@ -33,8 +32,14 @@ public class DirectLocator {
 //			System.out.println(value);
 ////			i.click(); ---> javascript selenium 
 //		}
-		
-		
+
+		driver.navigate().to("https://www.facebook.com/");
+		driver.findElement(By.cssSelector("._6lth")).click();
+		/*
+		 *  class 				=> .
+		 *  id    				=> #
+		 *  parent space child  => div input
+		 */
 		Thread.sleep(3000);
 		driver.quit();
 	}
