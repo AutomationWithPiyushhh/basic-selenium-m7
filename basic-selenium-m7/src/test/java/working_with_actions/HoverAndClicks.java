@@ -14,6 +14,9 @@ public class HoverAndClicks {
 //		2. left click
 //		3. right click
 //		4. double click
+//		5. click and hold
+//		6. release 
+//		7. drag and drop
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
