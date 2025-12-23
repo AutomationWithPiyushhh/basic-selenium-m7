@@ -12,35 +12,26 @@ import org.openqa.selenium.io.FileHandler;
 public class Facebook {
 	public static void main(String[] args) throws IOException {
 		WebDriver driver = new ChromeDriver();
-		
-		
-		driver.get("https://www.facebook.com/");
-		
+
+		driver.get("https://www.instagram.com/");
+
 //		1> downcasting
 		TakesScreenshot tks = (TakesScreenshot) driver;
-		
+
 //		2> take the ss in file format
 		File source = tks.getScreenshotAs(OutputType.FILE);
-		
+
 //		3> create the java representation object of the physical file
-		File destination = new File("C:/Users/User/git/Basic-Sel-M7/basic-selenium-m7/src/test/java/working_with_SS/dummy.png");
-		
+
+		String absPath = "C:\\Users\\User\\git\\Basic-Sel-M7\\basic-selenium-m7\\ss\\dummy1.png";
+		String relPath = "./ss/dummy2.png";
+
+		File destination = new File(relPath);
+
 //		4> copy that content to the dummy file
 		FileHandler.copy(source, destination);
-		
-		
+
 		driver.quit();
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 	}
 }
